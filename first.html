@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        body {
+            background-color: rgb(109, 108, 108);
+
+        }
+
+        .header {
+            border: 1px solid black;
+            height: 30vh;
+            width: 100vw;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            background-color: rgb(165, 165, 166);
+            border-style: none;
+        }
+
+        .box {
+            font-size: 30px;
+            color: rgb(38, 38, 38);
+        }
+
+        .soc{
+            border: 0px solid rgb(0, 0, 13);         
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+            font: 1em;
+            margin: 10px;
+        }
+
+        button{
+            margin-top: 10px;
+            background-color: rgb(195, 195, 195);
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            color: rgb(251, 250, 249);
+            /* height: auto; */
+            height: 70vh;
+            width: 100vw;
+            background-color: rgb(82, 82, 82);
+            /* margin: 20px; */
+            margin-top: 10px;
+            /* display: none; */
+        }
+
+        .image {
+            /* align-content: center;
+            justify-content: center; */
+            margin: 90px;
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            border-radius: 150px;
+        }
+
+        img:hover {
+            transform: scale(1.03);
+            box-shadow: 1px 1px 15px rgba(158, 148, 148, 0.8);
+            transition: transform 0.3s ease-out;
+        }
+
+        .info {
+            font-size: 1.4em;
+            text-align: center;
+            height: 50px;
+            width: 30vw;
+            line-height: 1.05em;
+            padding: 10px;
+            margin: 70px;
+            border: 0px solid black;
+            /* text-shadow: 1px 1px 10px rgb(164, 161, 161); */
+        }
+
+        ul li {
+            padding: 10px;
+            list-style-type: circle;
+            /* font-size: 17px; */
+            /* font-style: italic; */
+        }
+
+        p {
+            padding: 20px;
+            display: block;
+        }
+
+        .footer {
+            border: 1px solid black;
+            height: 40vh;
+            width: 100vw;
+            /* justify-content: center;
+            /* align-content: center; */
+            text-align: center; 
+            background-color: rgb(249, 249, 252);
+            border-style: none;            
+            background-color: rgb(165, 165, 166);
+            margin-top: 10px;
+            
+        }
+        .feedback{
+            color: #fdfcfc;
+            padding: 20px;
+            color: black;
+            font-size: 1.1em;
+        }
+        textarea{
+            margin-top: 20px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        textarea:focus{
+            outline: none;
+        }
+
+        button{
+            margin: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 15px;
+            border-radius: 10px;
+            border: 0px;
+        }
+        button:hover{
+            background-color: rgb(228, 222, 222);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="box ">
+            - A J E E T - 
+        </div>
+        <div class="soc">
+            <button><a href="https://x.com/itovfm?t=ddqxSLHqKHJmNqzw4X5rVg&s=09">tap</a></button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="image">
+            <img src="one.jpg" height="300" width="310" alt="A picture of me">
+        </div>
+        <div class="info">
+            <p>hi guys! <br> <br> <small>*about me-*</small></p>
+            <small>
+                <ul>
+                    <li>I am a third year student at a tier-3 college</li>
+                    <li>Currently struggling with DSA (trees:/)</li>
+                    <li>I am also interested in ai-ml and webdev</li>
+                    <li>I use (try to) Java as my primary language</li>
+                    <li>I am from Jaipur ( -khair.) </li>
+                </ul>
+            </small>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="feedback">
+            <!-- <p>Feedback form here</p> -->feedback (doesn't work)
+            <form action="feed">
+                <textarea name="feedback" id="feedback" rows="8" cols="80" placeholder="within 500 words"></textarea>
+            </form>
+            <button  type="submit">submit</button>
+        </div>
+
+    </div>    
+</body>
+
+</html>
