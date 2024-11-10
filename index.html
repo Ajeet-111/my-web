@@ -53,7 +53,7 @@
         .main {
             display: flex;
             justify-content: center;
-            align-content: center;
+            /* align-content: center; */
             text-align: center;
             color: rgb(251, 250, 249);
             /* height: auto; */
@@ -84,25 +84,38 @@
         }
 
         .info {
-            font-size: 1.4em;
+            position: relative;
+            top: 35px;
+            font-size: 1.2em;
             text-align: center;
-            /* width: 30vw; */
-            line-height: 1.05em;
+            width: 30vw;
+            height: 40vh;
+            /* line-height: 1.1em; */
             padding: 10px;
             margin: 70px;
             border: 0px solid black;
+            border-radius: 10px;
+            background-color: black;
             /* text-shadow: 1px 1px 10px rgb(164, 161, 161); */
+            
         }
 
-        ul li {
-            padding: 10px;
-            list-style-type: circle;
-            /* font-size: 17px; */
-            /* font-style: italic; */
+        .info:hover{
+            transform: scale(1.01);
+            box-shadow: 1px 1px 15px rgba(18, 18, 18, 0.8);
+            transition: transform 0.3s ease-out;
+        }
+
+        li{
+            padding: 7px;
+            margin: 5px;
+            text-align: left;
+            list-style-position: inside;
+            
         }
 
         p {
-            padding: 20px;
+            margin-bottom: 10px;
             display: block;
         }
 
@@ -121,7 +134,7 @@
         }
         .feedback{
             color: #fdfcfc;
-            padding: 20px;
+            padding: 10px;
             color: black;
             font-size: 1.1em;
         }
@@ -145,10 +158,16 @@
             border: 0px;
         }
         button:hover{
-            background-color: rgb(228, 222, 222);
+            background-color: rgb(241, 238, 238);
+            transform: scale(1.03);
+            box-shadow: 1px 1px 15px rgba(158, 148, 148, 0.8);
+            transition: transform 0.3s ease-out;
         }
         
         @media (max-width: 768px) {
+            *{
+                font-weight: 600;
+            }
             .header {
                 height: 30vh;
             }
@@ -180,8 +199,11 @@
             }
 
             .info {
+                position: relative;
+                top: 10px;
                 font-size: 1.1em;
                 width: 90%;
+                height: auto;
             }
 
             button {
@@ -204,7 +226,7 @@
 <body>
     <div class="header">
         <div class="box ">
-            - A J E E T - 
+            <h3>- A J E E T - </h3>
         </div>
         <div class="soc">
             <button><a href="https://x.com/itovfm?t=ddqxSLHqKHJmNqzw4X5rVg&s=09">tap</a></button>
@@ -215,7 +237,7 @@
             <img src="one.jpg" height="300" width="310" alt="A picture of me">
         </div>
         <div class="info">
-            <p>hi guys! <br> <br> <small>*about me-*</small></p>
+            <p>hi guys! <br> </p> <small>*about me*</small>
             <small>
                 <ul>
                     <li>I am a third year student at a tier-3 college</li>
@@ -234,7 +256,10 @@
             <form action="feed">
                 <textarea name="feedback" id="feedback" rows="8" cols="80" placeholder="within 500 words"></textarea>
             </form>
-            <button  type="submit">submit</button>
+            <button  type="submit"><a href="">submit</a></button>
+        </div>
+        <div class="cop">
+            
         </div>
 
     </div>    
