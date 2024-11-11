@@ -111,7 +111,7 @@
 
         }
 
-        .info:hover{
+        .info:hover {
             transform: translate(1%);
             box-shadow: 1px 1px 15px rgba(18, 18, 18, 0.8);
             transition: transform 0.3s ease-out;
@@ -172,6 +172,10 @@
 
         }
 
+        small {
+                font-size: 10px;
+            }
+
         @media (max-width: 768px) {
             * {
                 font-weight: 600;
@@ -231,7 +235,7 @@
                 width: 90%;
             }
 
-            small{
+            small {
                 font-size: 10px;
             }
         }
@@ -241,7 +245,7 @@
 <body>
     <div class="header">
         <div class="box ">
-            <h4>- hey guys i'm ajeet, a self proclaimed web developer lol</h3>
+            <h4>- hey guys! i'm ajeet :) <br><small>*just a 19 yo boy tryna learn cool things*</small></h3>
         </div>
         <div class="soc">
             <a href="index.html">home</a>
@@ -257,18 +261,27 @@
         </div>
         <div class="info">
             <small>*not important*</small>
-            <p>Yo! <br><br>this is so sudden and out of blue but i think i know where  i'll be in the next 6 years, nah not on footpath, i'll either be a successfull person or rip.<br><br> khair.. i wasn't planning to make a website when i don't know shit about the back end development but everyone told me to make one and as there were like 
-            a lot of people with those vercel app links or whatever on there twiiter profile, so i thought lemme make one too, i'm a boring person so i try to build things although i'm just starting. <br><br>i will keep adding new things as i learn them :3</p>
+            <p>Yo! how's it going?<br><br>i'm a third year student, and unfortunatly i am still new to programming, rn i'm learning js and then i'll learn back end, i'm also interested in AI, infact it's my branch lol but yeah they don't teach us anything about artificial intelligence. sad :/<br><br> khair.. i wasn't planning to make a website when i don't know shit
+                about the back end development but everyone told me to make one and as there were like
+                a lot of people with those vercel app links or whatever on there twiiter profile, so i thought lemme
+                make one too, i'm a boring person so i try to build things although i'm just starting.</p>
         </div>
     </div>
+
+    <!-- <div class="interact">
+        
+    </div> -->
 
     <div class="footer">
         <div class="feedback">
             <!-- <p>Feedback form here</p> -->feedback ?
-            <form action="feed">
-                <textarea name="feedback" id="feedback" rows="8" cols="80" placeholder="please write here"></textarea>
-                <br><button type="submit" >submit</button> <br><small>nah don't click cuz this shit sucks</small>
-            </form>
+            <div class="text">
+                <form action="feed">
+                    <textarea name="feedback" id="feedback" rows="6" cols="80"
+                        placeholder="please write here"></textarea>
+                    <br><button type="submit">submit</button> <br><small>nah don't click cuz this shit sucks</small>
+                </form>
+            </div>
             <!-- <button type="submit">submit</button> -->
         </div>
         <div class="cop">
@@ -276,6 +289,10 @@
         </div>
 
     </div>
+
+<!--     <script>
+        document.querySelector(button['submit'])
+    </script> -->
 </body>
 
 </html>
