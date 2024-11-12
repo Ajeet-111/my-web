@@ -13,6 +13,7 @@
             padding: 0;
             box-sizing: border-box;
             font-family: "Sour Gummy", sans-serif;
+            font-weight: 600;
         }
 
         body {
@@ -70,6 +71,7 @@
             height: auto;
             min-height: 70vh;
             width: 100vw;
+            padding: 20px;
             background-color: rgb(82, 82, 82);
             /* margin: 20px; */
             /* margin-top: 10px; */
@@ -95,8 +97,8 @@
         }
 
         .info {
-            position: relative;
-            top: 35px;
+            /* position: relative;
+            top: 35px; */
             font-size: 1.2em;
             text-align: center;
             width: 30vw;
@@ -129,6 +131,7 @@
             border: 1px solid black;
             height: 40vh;
             width: 100vw;
+            padding: 20px;
             /* justify-content: center;
             /* align-content: center; */
             text-align: center;
@@ -168,13 +171,13 @@
         }
 
         button:hover {
-            background-color: rgb(241, 238, 238);
+            background-color: rgb(233, 232, 232);
 
         }
 
         small {
-                font-size: 10px;
-            }
+            font-size: 10px;
+        }
 
         @media (max-width: 768px) {
             * {
@@ -245,13 +248,13 @@
 <body>
     <div class="header">
         <div class="box ">
-            <h4>- hey guys! i'm ajeet :) <br><small>*just a 19 yo boy tryna learn cool things*</small></h3>
+            <h4>- hey guys! i'm ajeet :) <br><small>*just a 19 yo boy tryna learn cool things*</small></h4>
         </div>
         <div class="soc">
             <a href="index.html">home</a>
             <a href="blog.html">blog</a>
             <a href="https://github.com/Ajeet-111">github</a>
-            <a href="social.html">socials</a>
+            <a href="dare.html">four</a>
         </div>
     </div>
     <div class="main">
@@ -261,7 +264,10 @@
         </div>
         <div class="info">
             <small>*not important*</small>
-            <p>Yo! how's it going?<br><br>i'm a third year student, and unfortunatly i am still new to programming, rn i'm learning js and then i'll learn back end, i'm also interested in AI, infact it's my branch lol but yeah they don't teach us anything about artificial intelligence. sad :/<br><br> khair.. i wasn't planning to make a website when i don't know shit
+            <p>Yo! how's it going?<br><br>i'm a third year student, and i am not even a rookie when it comes to
+                programming, rn i'm learning js and then i'll learn back end, i'm also interested in AI, infact it's my
+                branch lol but yeah they don't teach us anything about artificial intelligence. sad :/<br><br> khair.. i
+                wasn't planning to make a website when i don't know shit
                 about the back end development but everyone told me to make one and as there were like
                 a lot of people with those vercel app links or whatever on there twiiter profile, so i thought lemme
                 make one too, i'm a boring person so i try to build things although i'm just starting.</p>
@@ -274,25 +280,31 @@
 
     <div class="footer">
         <div class="feedback">
-            <!-- <p>Feedback form here</p> -->feedback ?
+            <!-- <p>Feedback form here</p> -->reviews?
             <div class="text">
-                <form action="feed">
+                <form id="feedbackForm">
                     <textarea name="feedback" id="feedback" rows="6" cols="80"
-                        placeholder="please write here"></textarea>
-                    <br><button type="submit">submit</button> <br><small>nah don't click cuz this shit sucks</small>
+                        placeholder="enter your feedback here."></textarea>
+                    <br><button type="submit">submit</button> <br><small></small>
                 </form>
             </div>
             <!-- <button type="submit">submit</button> -->
         </div>
-        <div class="cop">
+        <!-- <div class="cop">
 
-        </div>
+        </div> -->
 
     </div>
 
-<!--     <script>
-        document.querySelector(button['submit'])
-    </script> -->
+    <script>
+        document.getElementById("feedbackForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const feedback = document.getElementById("feedback").value;
+            console.log("Feedback submitted:", feedback);
+            alert("Thank you for your feedback!");
+            document.getElementById("feedback").value = "";
+        });
+    </script>
 </body>
 
 </html>
