@@ -26,7 +26,8 @@
 
         .header{
             border: 0px solid rgb(0, 0, 13);
-            margin: 40px;
+            margin-top: 40px;
+            margin-bottom: 40px;
         }
 
         a{
@@ -50,7 +51,7 @@
             display: inline-block;
             border: 0px solid black;
             height: auto;
-            width: 20vw;
+            width: 30vw;
             font-size: 1em;
             color: white;
             background-color: rgb(47, 47, 47);
@@ -58,15 +59,22 @@
             padding-bottom: 15px;
             border-radius: 5px;
             margin-top: 10px;
+            margin-bottom: 20px;
             padding-left: 20px;
             padding-left: 15px;
         }
 
         .info:hover {
-            transform: translate(0.6%);
+            transform: translate(1.02%);
             box-shadow: 1px 1px 15px rgba(107, 106, 106, 0.8);
             transition: transform 0.3s ease;
+            /* animation: LOL 0.3s infinite ease; */
         }
+
+        small {
+                font-size: 10px;
+                font-weight: 600;
+            }
 
         @media (max-width: 768px){
             .info {
@@ -76,10 +84,15 @@
                 padding-right: 10px;
             }
         }
+
+        /* @keyframes LOL{
+            opacity: 0%;
+        } */
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- <br> <small></small> -->
         
         <div class="header">
             <a href="index.html">home</a>
@@ -88,6 +101,10 @@
         <div class="info">
             11/11/2024 - 11:11 PM<br> <br>
             first blog hell yeah let's fucking go
+        </div> <br>
+        <div class="info">
+            12/11/2024 - 06:09 PM<br> <br>
+            what have i become. why don't i understand that i'll only end up regretting things if i keep living like this, with no consistency, no discipline and no goals. it sucks.
         </div>
     </div>
 </body>
