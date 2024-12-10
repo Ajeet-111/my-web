@@ -18,15 +18,17 @@
 
         body {
             background-color: rgb(109, 108, 108);
-
+            display: flex;
+            flex-direction: column;
         }
 
         .header {
             border: 1px solid black;
-            height: 30vh;
+            min-height: 30vh;
             width: 100vw;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
-            align-content: center;
             text-align: center;
             background-color: rgb(165, 165, 166);
             border-style: none;
@@ -34,23 +36,23 @@
 
         .box {
             font-size: 20px;
-            color: rgb(38, 38, 38);
+            color: rgb(9, 9, 9);
         }
 
         .soc {
             border: 0px solid rgb(0, 0, 13);
-            margin: 20px;
             font-size: 1em;
         }
 
         a {
             color: black;
-            text-decoration: none;
-            font: 1em;
+            /* text-decoration: ; */
+            font: 0.9em;
             margin: 10px;
             border: 0px solid black;
-            padding: 5px;
+            padding: 10px;
             border-radius: 20px;
+            /* background-color: rgb(144, 144, 144); */
         }
 
         a:hover {
@@ -105,14 +107,11 @@
             text-align: center;
             width: 30vw;
             height: auto;
-            /* display: inline-block; */
-            /* line-height: 1.1em; */
             padding: 10px;
             margin: 70px;
             border: 0px solid black;
             border-radius: 10px;
             background-color: rgb(42, 41, 41);
-            /* text-shadow: 1px 1px 10px rgb(164, 161, 161); */
 
         }
 
@@ -122,7 +121,7 @@
             transition: transform 0.3s ease-out;
         }
 
-        p {
+        p{
             margin-bottom: 10px;
             display: block;
             padding: 15px;
@@ -180,6 +179,10 @@
 
         small {
             font-size: 10px;
+        }
+
+        h4{
+            font-size: x-large;
         }
 
         @media (max-width: 768px) {
@@ -251,13 +254,13 @@
 <body>
     <div class="header">
         <div class="box ">
-            <h4>- hey guys! i'm ajeet :) <br><small>*just a 19 yo boy tryna learn cool things*</small></h4>
-        </div>
+            <h4>- hey guys! i'm ajeet :) </h4><small>*just a 19 yo boy tryna learn cool things*</small>
+        </div><br>
         <div class="soc">
             <a href="index.html">home</a>
             <a href="blog.html">blog</a>
             <a href="https://github.com/Ajeet-111">github</a>
-            <a href="dare.html">stuff</a>
+            <a href="Project.html">Projects</a>
         </div>
     </div>
     <div class="main">
@@ -266,18 +269,14 @@
                 alt="A picture of me">
         </div>
         <div class="info">
-            <small>*not important*</small>
-            <p>Yo! how's it going?<br><br>i'm a third year student, and i am not even a rookie when it comes to
-                programming, rn i'm learning js and then i'll learn back end, i'm also interested in AI, infact it's my
-                branch lol but yeah they don't teach us anything about artificial intelligence at the university. sad :/ <br> <br> 
-                i still have a long way to go, it's just the starting.
+            <!-- <small>*not important*</small> -->
+            <p>Yo! how's it going?<br><br>i'm a third year student at a tier-3 college, and i am not even a rookie when it comes to
+                programming, right now i'm learning javaScript and then i'll learn back end, i'm also interested in AI, infact it's my
+                branch lol anyways- <br> <br> Java, python, C/C++ and javaScript are the only languages i know, i've experience with using python as backend in my projects and i use java for dsa. <br> <br>
+                i'm just starting, i have a long way to go.
             </p>
         </div>
     </div>
-
-    <!-- <div class="Projects">
-        i will add some projects here soon.
-    </div> -->
 
     <div class="footer">
         <div class="feedback">
@@ -298,14 +297,20 @@
     </div>
 
     <script>
+
         document.getElementById("feedbackForm").addEventListener("submit", function (event) {
             event.preventDefault();
             const feedback = document.getElementById("feedback").value;
             console.log("Feedback submitted:", feedback);
-            alert("Thank you for your feedback!");
-            document.getElementById("feedback").value = "";
+            if (feedback != '') {
+                alert("Thank you for your feedback!");
+                document.getElementById("feedback").value = "";
+            }else{
+                alert("please enter a feedback")
+            }
         });
     </script>
 </body>
 
 </html>
+
